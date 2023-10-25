@@ -36,6 +36,7 @@ function CoreConcept(props) {
 function App() {
   return (
     <div>
+      <Header />
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
