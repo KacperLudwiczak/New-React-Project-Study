@@ -4,8 +4,11 @@ import { CORE_CONCEPTS } from "./data";
 import TabButton from "./components/TabButton";
 
 function App() {
+  let tabContent = "Please Click";
+
   function handleSelect(selectedButton) {
-    console.log(selectedButton);
+    // console.log(selectedButton);
+    tabContent = selectedButton;
   }
 
   return (
@@ -37,6 +40,7 @@ function App() {
             <TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
             <TabButton onSelect={() => handleSelect("state")}>State</TabButton>
           </menu>
+          {tabContent}
         </section>
       </main>
     </div>
